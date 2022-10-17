@@ -1,4 +1,4 @@
-
+import numpy
 def selection_sort(unsorted_list):
     size_of_list = len(unsorted_list)
     for i in range(size_of_list):
