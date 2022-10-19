@@ -13,8 +13,9 @@ def insertion_sort(unsorted_list):
 
 
 
-my_list = [10, 11, 12, 1, 2, 3]
+my_list = [13, 95, 10, 43, 3, 64, 48, 52, 75, 12, 51]
 print(my_list)
 insertion_sort(my_list)
 print(my_list)
+
 

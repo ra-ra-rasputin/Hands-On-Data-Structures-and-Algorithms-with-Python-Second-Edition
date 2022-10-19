@@ -1,6 +1,9 @@
 
 def nearest_mid(input_list, lower_bound_index, upper_bound_index, search_value):
-    return lower_bound_index + (( upper_bound_index - lower_bound_index)// (input_list[upper_bound_index] - input_list[lower_bound_index])) * (search_value - input_list[lower_bound_index])
+    return lower_bound_index + \
+        (upper_bound_index - lower_bound_index) * \
+        (search_value - input_list[lower_bound_index]) // \
+        (input_list[upper_bound_index] - input_list[lower_bound_index])
 
 def interpolation_search(ordered_list, term):
     size_of_list = len(ordered_list) - 1
@@ -19,6 +22,7 @@ def interpolation_search(ordered_list, term):
 
 
 
-store = [2, 4, 5, 12, 43, 54, 60, 77]
-a = interpolation_search(store, 2)
+store = [10, 12, 13, 16, 18, 19, 20,
+    21, 22, 23, 24, 33, 35, 42, 47]
+a = interpolation_search(store, 33)
 print("Index position of value 2 is ",a)
