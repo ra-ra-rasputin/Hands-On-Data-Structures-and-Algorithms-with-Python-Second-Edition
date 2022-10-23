@@ -32,4 +32,4 @@ def KMP_Matcher(text,pattern):              # KMP matcher function
     if not flag:
         print('\nNo match found')
 
-KMP_Matcher('aabaacaadaabaaba','aabac')              # function call, with two parameters,text and pattern
+KMP_Matcher('aabaacaadaabaaba','abccbbcabc')              # function call, with two parameters,text and pattern
